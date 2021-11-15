@@ -1,0 +1,28 @@
+---
+import BaseHead from '../../components/BaseHead.astro'
+import BlogPostPreview from '../../components/BlogPostPreview.astro'
+
+interface MarkdownFrontmatter {
+    title: string;
+    publishDate: number;
+}
+
+let allPosts = Astro.fetchContent<MarkdownFrontmatter>('./*.md');
+allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(a.publishDate).valueOf());
+
+let title = 'Posts | Oz Ertas'
+---
+<html lang="en">
+    <BaseHead title={title} />
+
+<body>
+    <div>
+      <main>
+        <section aria-label="Blog post list">
+          {allPosts.map(p => <BlogPostPreview post={p} />)}
+        </section>
+      </main>
+    </div>
+  </body>
+
+</html>

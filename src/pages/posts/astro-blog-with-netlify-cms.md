@@ -1,7 +1,6 @@
 ---
-layout: '../../layouts/post.astro'
+layout: '../../layouts/PostLayout.astro'
 title: 'How to create a Blog with Astro and Netlify CMS'
-description: "We're excited to announce Astro as a new way to build static websites and deliver lightning-fast performance without sacrificing a modern developer experience."
 publishDate: 'Tuesday, November 15 2021'
 ---
 
