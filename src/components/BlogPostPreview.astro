@@ -1,4 +1,5 @@
 ---
+import dayjs from 'dayjs'
 export interface Props {
   post: any;
 }
@@ -10,5 +11,5 @@ const { post } = Astro.props;
     <a href={post.url}>
         <p class='md:text-lg font-bold hover:underline'>{post.title}</p>
     </a>
-    <p class='text-sm text-gray-500'>{post.publishDate}</p>
+    <p class='text-sm text-gray-500'>{dayjs(post.publishDate).format('MMM D, YYYY')}</p>
 </li>

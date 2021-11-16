@@ -3,6 +3,7 @@ layout: ../../layouts/PostLayout.astro
 title: How to style markdown with Tailwind CSS
 publishDate: 2021-11-16T22:17:34.145Z
 ---
+
 Tailwind CSS comes with "an opinionated set of base styles" called Preflight. A helpful CSS reset built on top of [modern-normalize](https://github.com/sindresorhus/modern-normalize).
 
 Margins, headings, lists, and many others get stripped from their defaults. Thus, achieving cross-browser consistency and an easier adaptation of your design system.
@@ -30,10 +31,10 @@ module.exports = {
     // ...
   },
   plugins: [
-    require('@tailwindcss/typography'),
+    require("@tailwindcss/typography")
     // ...
-  ],
-}
+  ]
+};
 ```
 
 Finally, you can use the `prose` class to apply the markdown styling:
@@ -42,10 +43,12 @@ Finally, you can use the `prose` class to apply the markdown styling:
 <article class="prose lg:prose-xl">
   <h1>Welcome to Mars!</h1>
   <p>
-    Although life on Mars is perfect in every single way, you might have some questions.
+    Although life on Mars is perfect in every single way, you might have some
+    questions.
   </p>
   <p>
-    Of course there’s air! Just don’t breathe it. And, with the crazy gravity situation, everyone can dunk!
+    Of course there’s air! Just don’t breathe it. And, with the crazy gravity
+    situation, everyone can dunk!
   </p>
   <!-- ... -->
 </article>
