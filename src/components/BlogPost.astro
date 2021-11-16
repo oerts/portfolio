@@ -12,7 +12,7 @@ const { title, publishDate } = Astro.props;
         <h1 class='text-lg md:text-xl font-bold'>{title}</h1>
         <p class="text-gray-500">{publishDate}</p>
       </header>
-      <article class='prose prose-green mb-5'>
+      <article class='prose md:prose-lg prose-green mb-5 mx-auto'>
         <slot />
       </article>
   </main>

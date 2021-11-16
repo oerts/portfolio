@@ -4,5 +4,5 @@
     Hi! I am a freelance web developer based in Maine. I make lighter and faster websites that work.
   </p>
 
-  <p>Send me an <a class='underline text-green-500 hover:text-green-800' href="">email</a> or set a <a class='underline text-green-500 hover:text-green-800' href="">meeting</a>.</p>
+  <p>Send me an <a class='underline text-green-600 hover:text-green-800' href="mailto:oz@ertas.dev">email</a> or set a <a class='underline text-green-600 hover:text-green-800' href="https://calendly.com/ertas/30min" target="_blank">meeting</a>.</p>
   </header>
