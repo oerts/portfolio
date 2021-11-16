@@ -1,17 +1,18 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
 import BlogPost from '../components/BlogPost.astro';
+import Navigation from '../components/Navigation.svelte'
 
 const {content} = Astro.props;
 const {title, publishDate } = content;
 ---
-  
-<html lang={ content.lang || 'en' }>
-  <head>
-    <BaseHead title={title}/>
-  </head>
 
-  <body>
+<html lang={ content.lang || 'en' }>
+    <BaseHead title={title}/>
+
+
+  <body class='p-5 text-gray-800 max-w-prose mx-auto'>
+  <Navigation />
     <BlogPost title={title} publishDate={publishDate}>
       <slot />
     </BlogPost>

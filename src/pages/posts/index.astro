@@ -1,6 +1,7 @@
 ---
 import BaseHead from '../../components/BaseHead.astro'
 import BlogPostPreview from '../../components/BlogPostPreview.astro'
+import Navigation from '../../components/Navigation.svelte'
 
 interface MarkdownFrontmatter {
     title: string;
@@ -11,18 +12,20 @@ let allPosts = Astro.fetchContent<MarkdownFrontmatter>('./*.md');
 allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(a.publishDate).valueOf());
 
 let title = 'Posts | Oz Ertas'
+let currentPage = '/posts'
 ---
 <html lang="en">
-    <BaseHead title={title} />
+  <BaseHead title={title} />
 
-<body>
-    <div>
-      <main>
-        <section aria-label="Blog post list">
-          {allPosts.map(p => <BlogPostPreview post={p} />)}
-        </section>
-      </main>
-    </div>
+  <body class='p-5 text-gray-800 max-w-prose mx-auto'>
+    <Navigation {currentPage}/>
+    <main>
+    <section aria-label="Blog post list">
+      <ul class='flex flex-col space-y-2.5'>
+        {allPosts.map(p => <BlogPostPreview post={p} />)}
+      </ul>
+    </section>
+    </main>
   </body>
 
 </html>

@@ -1,15 +1,20 @@
 ---
 	import BaseHead from '../components/BaseHead.astro'
+	import Navigation from '../components/Navigation.svelte'
+	import Header from '../components/Header.svelte'
+	import Work from '../components/Work.svelte'
 
 	let title = 'Oz Ertas'
+	let currentPage = '/'
 ---
 <html lang="en">
 
 <BaseHead title={title} />
 
-<body>
-	<h1>ertas.dev</h1>
-	<a href="/posts">Blog</a>
+<body class='p-5 text-gray-800 max-w-prose mx-auto'>
+	<Navigation {currentPage} />
+	<Header />
+	<Work />
 </body>
 
 </html>

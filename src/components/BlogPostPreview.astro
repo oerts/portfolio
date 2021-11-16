@@ -8,7 +8,7 @@ const { post } = Astro.props;
 
 <li>
     <a href={post.url}>
-        <p>{post.title}</p>
-        <p>{post.publishDate}</p>
+        <p class='md:text-lg font-bold hover:underline'>{post.title}</p>
     </a>
+    <p class='text-sm text-gray-500'>{post.publishDate}</p>
 </li>
