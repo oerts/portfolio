@@ -16,8 +16,11 @@
 
 <h2 class='text-lg md:text-xl font-semibold mb-2.5'>Work</h2>
 
-<ul class='flex flex-col space-y-2.5'>
+<ul class='flex flex-col space-y-5'>
 {#each examples as {url, title, description}}
   <WorkCard {url} {title} {description} />
 {/each}
+<li>
+  <p class='text-sm pl-2.5'>Visit my <a class='underline text-green-600 hover:text-green-800' href="https://github.com/oerts" target="_blank">github</a> for more.</p>
+</li>
 </ul>
