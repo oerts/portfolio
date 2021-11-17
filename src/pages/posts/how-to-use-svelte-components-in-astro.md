@@ -7,9 +7,9 @@ Astro supports Svelte out of the box. All you need is the correct framework [ren
 
 A renderer is an npm package that handles two things; rendering and rehydrating HTML.
 
-We need to install @astrojs/renderer-svelte plugin to make Svelte components work.
+We need to install `@astrojs/renderer-svelte` plugin to make Svelte components work.
 
-Install @astrojs/renderer-svelte via npm or yarn:
+Install `@astrojs/renderer-svelte` via npm or yarn:
 
 ```bash
 # Using npm
