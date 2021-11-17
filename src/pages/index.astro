@@ -1,21 +1,14 @@
 ---
 	import BaseHead from '../components/BaseHead.astro'
-	import Navigation from '../components/Navigation.svelte'
 	import Header from '../components/Header.svelte'
 	import Work from '../components/Work.svelte'
+	import PageLayout from '../layouts/PageLayout.astro'
 
 	let title = 'Oz Ertas'
 	let currentPage = '/'
 ---
-<html lang="en">
 
-<head>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<BaseHead title={title} />
-</head>
-
-<body class='p-5 text-gray-800 max-w-prose mx-auto overflow-y-scroll'>
-	<Navigation {currentPage} />
+<PageLayout title={title} currentPage={currentPage}>
 	<Header />
 	<Work />
 
@@ -30,6 +23,4 @@
     });
   }
 </script>
-</body>
-
-</html>
+</PageLayout>

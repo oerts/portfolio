@@ -2,19 +2,19 @@
 import BaseHead from '../components/BaseHead.astro';
 import BlogPost from '../components/BlogPost.astro';
 import Navigation from '../components/Navigation.svelte'
+import Footer from '../components/Footer.svelte'
 
 const {content} = Astro.props;
 const {title, publishDate } = content;
 ---
 
 <html lang={ content.lang || 'en' }>
-    <BaseHead title={title}/>
-
-
-  <body class='p-5 text-gray-800 max-w-prose mx-auto'>
+  <BaseHead title={title}/>
+  <body class='min-h-screen p-5 text-gray-800 max-w-prose mx-auto overflow-y-scroll'>
   <Navigation />
     <BlogPost title={title} publishDate={publishDate}>
       <slot />
     </BlogPost>
+    <Footer />
   </body>
 </html>

@@ -7,9 +7,9 @@ export interface Props {
 const { post } = Astro.props;
 ---
 
-<li>
+<li class='lg:flex lg:justify-between items-center'>
     <a href={post.url}>
         <p class='md:text-lg font-bold hover:underline'>{post.title}</p>
     </a>
-    <p class='text-sm text-gray-500'>{dayjs(post.publishDate).format('MMM D, YYYY')}</p>
+    <p class='text-sm lg:text-base text-gray-500'>{dayjs(post.publishDate).format('MMM D, YYYY')}</p>
 </li>

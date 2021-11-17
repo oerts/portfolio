@@ -1,0 +1,19 @@
+---
+  import BaseHead from '../components/BaseHead.astro'
+  import Navigation from '../components/Navigation.svelte'
+  import Footer from '../components/Footer.svelte'
+
+  const {title, currentPage} = Astro.props;
+---
+
+<html lang="en">
+
+  <BaseHead title={title} />
+  <body class='flex flex-col min-h-screen p-5 text-gray-800 max-w-prose mx-auto overflow-y-scroll'>
+    <Navigation currentPage={currentPage} />
+    <main class='flex-grow'>
+      <slot />
+    </main>
+    <Footer />
+  </body>
+</html>

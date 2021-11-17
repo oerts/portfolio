@@ -9,7 +9,7 @@
   {
     'url': 'https://qukbuk.erts.pw',
     'title': "qukbuk",
-    'description': "An app I built for my wife so she doesn't lose her recipes."
+    'description': "(Coming soon) An app I built for my wife so she doesn't lose her recipes."
   }
   ]
 </script>
@@ -20,7 +20,4 @@
 {#each examples as {url, title, description}}
   <WorkCard {url} {title} {description} />
 {/each}
-<li>
-  <p class='text-sm pl-2.5'>Visit my <a class='underline text-green-600 hover:text-green-800' href="https://github.com/oerts" target="_blank">github</a> for more.</p>
-</li>
 </ul>

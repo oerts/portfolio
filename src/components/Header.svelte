@@ -5,4 +5,4 @@
   </p>
 
   <p>Send me an <a class='underline text-green-600 hover:text-green-800' href="mailto:oz@ertas.dev">email</a> or set a <a class='underline text-green-600 hover:text-green-800' href="https://calendly.com/ertas/30min" target="_blank">meeting</a>.</p>
-  </header>
+</header>
