@@ -19,7 +19,7 @@ npm install @astrojs/renderer-svelte
 yarn add @astrojs/renderer-svelte
 ```
 
-Add it to your `astro.config.mjs` in the `renderer` property.
+Add it to your `astro.config.mjs` in the `renderers` property.
 
 ```javascript
 export default {
