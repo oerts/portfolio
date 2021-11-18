@@ -13,7 +13,7 @@ In comes `@tailwindcss/typography`, a plugin with sensible typographic styles. I
 
 You can install it via npm or yarn:
 
-```
+```bash
 # Using npm
 npm install @tailwindcss/typography
 
