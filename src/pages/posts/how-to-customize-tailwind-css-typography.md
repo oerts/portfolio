@@ -9,7 +9,7 @@ If you don't know what Typography is, you should read [How to style markdown wit
 
 Inline code styling that comes default with the plugin is one style that is replaced by many. It inserts back ticks before and after the inline code and makes it bold, instead of the more common approach:
 
-`<h3> Concerning Wedding Registries </h3>`
+`<p> Hello world! </p> `
 
 The solution to this is customizing the `tailwind.config.js` file. This allows you to target specific Tailwind classes and adjust their default behavior.
 
