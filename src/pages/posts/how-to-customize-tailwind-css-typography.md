@@ -7,13 +7,9 @@ Tailwind CSS Typography provides a set of prose classes you can use to style you
 
 If you don't know what Typography is, you should read [How to style markdown with Tailwind CSS](https://ertas.dev/posts/how-to-style-markdown-with-tailwind-css/) to learn more.
 
-Inline code styling that comes default with the plugin is one style that is replaced by many. It inserts back ticks before and after the inline code and makes it bold:
+Inline code styling that comes default with the plugin is one style that is replaced by many. It inserts back ticks before and after the inline code and makes it bold, instead of the more common approach:
 
-**\`\<p> A knife sharpener, a set of knives, a year’s supply of garbage bags, and a large tarp, please. \</p> \`**
-
-Instead of the more common approach:
-
-`<h3> Concerning Wedding Registries </h3>`
+`<p> Hello world! </p> `
 
 The solution to this is customizing the `tailwind.config.js` file. This allows you to target specific Tailwind classes and adjust their default behavior.
 
