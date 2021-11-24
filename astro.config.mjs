@@ -12,5 +12,9 @@ export default /** @type {import('astro').AstroUserConfig} */ ({
   renderers: ["@astrojs/renderer-svelte"],
   devOptions: {
     tailwindConfig: "./tailwind.config.js"
+  },
+  buildOptions: {
+    sitemap: true,
+    site: "https://ertas.dev"
   }
 });
