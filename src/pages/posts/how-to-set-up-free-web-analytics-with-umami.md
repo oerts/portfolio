@@ -13,7 +13,7 @@ Umami provides great [documentation](https://umami.is/docs/running-on-heroku) on
 
 Go ahead and click the Button below, give your app a name and click **Deploy app**. Heroku will take care of the rest of the set up.
 
-[![Deploy to Heroku](https://heroku.com/deploy?template=https://github.com/mikecao/umami)](https://www.herokucdn.com/deploy/button.svg)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mikecao/umami)
 
 Once the build succeeds, click **Open app** in your Heroku dashboard to get to your Umami instance.
 
