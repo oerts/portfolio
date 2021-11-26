@@ -11,11 +11,9 @@ To get started, set up a free account with [Heroku](https://www.heroku.com/home)
 
 Umami provides great [documentation](https://umami.is/docs/running-on-heroku) on how to complete the manual installation. But there is also a Heroku Button that we can use that requires zero effort.
 
-Go ahead and click the "Button" below, give your app a name and click **Deploy app**. Heroku will take care of the rest of the set up.
+Go ahead and click the Button below, give your app a name and click **Deploy app**. Heroku will take care of the rest of the set up.
 
-[Deploy to Heroku](https://heroku.com/deploy?template=https://github.com/Better-CF/umami)
-
-*(Although Umami has their own Button in the documentation, at the time of writing, it is not usable for me. I went for the alternative made by Better-CF above.)*
+[![Deploy to Heroku](https://heroku.com/deploy?template=https://github.com/mikecao/umami)](https://www.herokucdn.com/deploy/button.svg)
 
 Once the build succeeds, click **Open app** in your Heroku dashboard to get to your Umami instance.
 
