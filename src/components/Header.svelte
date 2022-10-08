@@ -6,16 +6,6 @@
 	</p>
 
 	<p>
-		Send me an
-		<a
-			class="underline text-green-600 hover:text-green-800"
-			href="mailto:oz@zrts.org">email</a
-		>
-		or set a
-		<a
-			class="underline text-green-600 hover:text-green-800"
-			href="https://calendly.com/ertas/30min"
-			target="_blank">meeting</a
-		>.
+		send me an email: oz at ertas dot dev
 	</p>
 </header>
