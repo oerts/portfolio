@@ -6,6 +6,6 @@
 	</p>
 
 	<p>
-		send me an email: oz at ertas dot dev
+		send me an email: hey at zrts dot org
 	</p>
 </header>
